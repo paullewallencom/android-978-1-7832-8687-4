@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Concurrency Examples</string>
+
+    <!-- chapter1 -->
+    <string name="ch1_ex1">Chapter1 Example1</string>
+    <string name="ch1_ex1_desc">Triggers an Application Not Responding dialog (which will crash the app!)</string>
+    <string name="tap">Tap</string>
+    <string name="each">Each</string>
+    <string name="button">Button</string>
+    <string name="tap_each_button">Tap each button a couple of times to trigger the ANR</string>
+    <string name="ch1_ex2">Chapter1 Example2</string>
+    <string name="ch1_ex2_desc">Performs "too much" work on the main thread, causing the Choreographer to complain (API level 16+)</string>
+    <string name="expect_choreographer">Watch logcat from your IDE while running this activity - expect to see the choreographer complaining about skipped frames with messages like:</string>
+    <string name="logcat_choreographer">I/Choreographer﹕ Skipped 48 frames!  The application may be doing too much work on its main thread.</string>
+
+    <!-- chapter2 -->
+    <string name="ch2_ex1">Chapter2 Example1</string>
+    <string name="ch2_ex1_desc">Find the nth probable prime in the background using AsyncTask</string>
+    <string name="ch2_ex2">Chapter2 Example2</string>
+    <string name="ch2_ex2_desc">Find the nth probable prime using AsyncTask, displaying indeterminate progress dialog</string>
+    <string name="ch2_ex3">Chapter2 Example3</string>
+    <string name="ch2_ex3_desc">Find the nth probable prime using AsyncTask, displaying a determinate progress bar</string>
+    <string name="ch2_ex4">Chapter2 Example4</string>
+    <string name="ch2_ex4_desc">Find the nth probable prime with cancellation</string>
+    <string name="ch2_ex5">Chapter2 Example5</string>
+    <string name="ch2_ex5_desc">Retained Headless Fragment to continue AsyncTask processing across activity restarts</string>
+    <string name="ch2_medley">Chapter2 AsyncTask Medley</string>
+    <string name="ch2_medley_desc">One Activity incorporating all of the chapter 2 examples for comparison</string>
+
+    <string name="no_result_yet">Press a button</string>
+    <string name="do_on_main_thread">Execute on Main thread</string>
+    <string name="do_in_background">Execute in background</string>
+    <string name="do_in_background_with_feedback">Execute in background with spinner</string>
+    <string name="calculating">Calculating&#8230;</string>
+    <string name="do_in_background_with_progress">Execute in background showing progress</string>
+    <string name="do_in_background_with_cancel">Execute in background allowing cancel</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- chapter3 -->
+    <string name="ch3_ex1a">Chapter3 Example1a</string>
+    <string name="ch3_ex1a_desc">Handler example, using post(Runnable) to update the view</string>
+    <string name="ch3_ex1b">Chapter3 Example1b</string>
+    <string name="ch3_ex1b_desc">Handler example, using view.post(Runnable)</string>
+    <string name="ch3_ex2">Chapter3 Example2</string>
+    <string name="ch3_ex2_desc">Handler example using postDelayed</string>
+    <string name="ch3_ex3">Chapter3 Example3</string>
+    <string name="ch3_ex3_desc">Network IO on a background thread, sending messages to the main thread</string>
+    <string name="ch3_ex4">Chapter3 Example4</string>
+    <string name="ch3_ex4_desc">HandlerThread example - sending messages back and forth between HandlerThread and main thread</string>
+    <string name="ch3_ex5">Chapter3 Example5</string>
+    <string name="ch3_ex5_desc">Handler example - consuming sensor events on a HandlerThread and updating the UI to show a compass pointer</string>
+
+    <string name="tap_to_queue">Tap me more than once</string>
+    <string name="wait">Wait for it...</string>
+    <string name="tada">Ta-da!</string>
+    <string name="cancelled">Cancelled</string>
+
+    <!-- chapter4 -->
+    <string name="ch4_ex1">Chapter4 Example1</string>
+    <string name="ch4_ex1_desc">Send an image from the gallery app, loads thumbnail in the background using a Loader</string>
+    <string name="ch4_ex2">Chapter4 Example2</string>
+    <string name="ch4_ex2_desc">Demonstrates use of a CursorLoader to list image filenames from the MediaStore on a background thread</string>
+    <string name="ch4_ex3">Chapter4 Example3</string>
+    <string name="ch4_ex3_desc">Combines examples 1 &amp; 2 to display a tiled grid of thumbnails from the MediaStore</string>
+    <string name="ch4_ex4">Chapter4 Example4</string>
+    <string name="ch4_ex4_desc">Demonstrates use of AsyncTaskLoader to perform background calculations</string>
+    <string name="ch4_ex5">Chapter4 Example5</string>
+    <string name="ch4_ex5_desc">CursorLoader &amp; ListView example</string>
+
+    <string name="choose_number">number greater than 2</string>
+    <string name="go">go</string>
+    <string name="send_from_gallery">open your gallery app, choose an image and "send" it to this activity</string>
+
+    <!-- chapter5 -->
+    <string name="ch5_ex1">Chapter5 Example1</string>
+    <string name="ch5_ex1_desc">Demonstrates using an IntentService to perform long-running calculations, returning results via PendingIntent</string>
+    <string name="ch5_ex2">Chapter5 Example2</string>
+    <string name="ch5_ex2_desc">Demonstrates using an IntentService to perform long-running calculations, posting results as notifications</string>
+    <string name="ch5_ex3">Chapter5 Example3</string>
+    <string name="ch5_ex3_desc">Demonstrates using an IntentService to perform long-running calculations, returning results via Messenger</string>
+    <string name="ch5_ex4">Chapter5 Example4</string>
+    <string name="ch5_ex4_desc">Demonstrates using an IntentService to perform long-running calculations, returning results via broadcast or notification</string>
+    <string name="ch5_ex5">Chapter5 Example5</string>
+    <string name="ch5_ex5_desc">Demos uploading an image to a remote server using IntentService (your images are safe, the server never stores them)</string>
+
+    <string name="primes_service">Primes IntentService</string>
+    <string name="upload_service">Upload IntentService</string>
+    <string name="nth_prime">Enter N to find Nth prime</string>
+
+    <!-- chapter6 -->
+    <string name="comma_nth_prime">Enter comma separated N\'s to find Nth primes</string>
+    <string name="ch6_ex1">Chapter6 Example1</string>
+    <string name="ch6_ex1_desc">Invoke a Service with Intents, perform multiple concurrent calculations, return results via messenger</string>
+
+    <string name="ch6_ex2">Chapter6 Example2</string>
+    <string name="ch6_ex2_desc">Obtain a local binding to a Service, invoke background work directly with "normal" java method invocations</string>
+
+    <string name="ch6_ex3">Chapter6 Example3</string>
+    <string name="ch6_ex3_desc">Obtain a local binding to a Service, invoke work with direction method invocation, return results via messenger</string>
+
+    <string name="ch6_ex4">Chapter6 Example4</string>
+    <string name="ch6_ex4_desc">Obtain a local binding to a Service, directly invoke work, return results by Broadcast or notification</string>
+
+    <string name="ch6_ex5">Chapter6 Example5</string>
+    <string name="ch6_ex5_desc">Invoke a Service with Intents, perform large image download, return Bitmap for display via messenger</string>
+
+    <string name="ch6_ex6">Chapter6 Example6</string>
+    <string name="ch6_ex6_desc">Uses a Service to download and parse RSS, then download and display images from RSS</string>
+
+    <!-- chapter7 -->
+    <string name="schedule_5_sec">Tap \'Set Alarm\' to set up an alarm for 5 seconds time. Tap \'Cancel Alarm\' to remove it.</string>
+    <string name="schedule">Set Alarm</string>
+    <string name="unschedule">Cancel Alarm</string>
+    <string name="ch7_ex1">Chapter7 Example1</string>
+    <string name="ch7_ex1_desc">Simple AlarmManager example - schedule/unschedule an alarm, received by a BroadcastReceiver registered in the manifest</string>
+
+    <string name="register_to_receive">If there\'s no receiver registered you won\'t receive the alarm. Tap to the buttons to register/unregister a receiver.</string>
+    <string name="register">Register Receiver</string>
+    <string name="unregister">Unregister Receiver</string>
+    <string name="ch7_ex2">Chapter7 Example2</string>
+    <string name="ch7_ex2_desc">Simple AlarmManager example - schedule/unschedule an alarm, received by a dynamically registered BroadcastReceiver</string>
+
+    <string name="schedule_30_sec">Tap \'Set Alarm\' to set up an alarm for 30 seconds time, then quit the app with task manager before the alarm triggers...</string>
+    <string name="ch7_ex3">Chapter7 Example3</string>
+    <string name="ch7_ex3_desc">AlarmManager example - schedule alarm for 30 seconds time to calculate primes in async BroadcastReceiver</string>
+
+    <string name="ch7_ex4">Chapter7 Example4</string>
+    <string name="ch7_ex4_desc">AlarmManager example - schedule alarm for 30 seconds time to calculate primes using IntentService</string>
+
+    <string name="schedule_2_mins">Tap \'Set Alarm\' to set up an alarm for 2 minutes time, quit the app with task manager and turn off the screen before the alarm triggers.</string>
+    <string name="ch7_ex5">Chapter7 Example5</string>
+    <string name="ch7_ex5_desc">AlarmManager example - schedule alarm for 2 minutes time to calculate primes using IntentService with wake-lock</string>
+
+    <string name="schedule_get_activity">Tap \'Set Alarm with getActivity\' to set an alarm for 15 seconds time. If you don\'t exit the app, a new Activity will start on top of this one.</string>
+    <string name="set_alarm_get_activity">Set Alarm with getActivity</string>
+    <string name="schedule_get_activities">Tap \'Set Alarm with getActivities\' to set an alarm for 15 seconds time. Even if you don\'t exit the app, the back-stack will be re-constructed.</string>
+    <string name="set_alarm_get_activities">Set Alarm with getActivities</string>
+    <string name="was_started_by_alarm">Started by an Alarm!</string>
+    <string name="was_not_started_by_alarm">Not started by an Alarm</string>
+    <string name="ch7_ex6">Chapter7 Example6</string>
+    <string name="ch7_ex6_desc">AlarmManager example - schedule alarm for 15 seconds time to start an Activity (or Activities, plural)</string>
+
+</resources>
